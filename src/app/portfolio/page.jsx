@@ -8,26 +8,26 @@ const items = [
   {
     id: 1,
     color: 'from-red-300 to-blue-300',
-    title: 'Blogs App',
+    title: 'Blogs',
     desc: 'A blog web application using Next.js, showcasing optimal performance and seamless user navigation. Implemented modern design principles and leveraged Next.js features to create a dynamic and engaging user experience.',
-    img: 'https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    link: 'https://github.com/JoyDas1902/blogs',
+    img: '/blogs.png',
+    link: 'https://blogs-joydas19.vercel.app',
   },
   {
     id: 2,
     color: 'from-blue-300 to-violet-300',
-    title: 'Portfolio App',
-    desc: 'A portfolio website using React.js, seamlessly blending creativity and professionalism. Enhanced user interactions with Framer Motion animations and maintained clean, modular styles using Sass. Elevating my online presence with a modern and visually appealing showcase of skills and projects.',
-    img: 'https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    link: 'https://github.com/JoyDas1902/portfolio',
+    title: 'Portfolio',
+    desc: 'A portfolio website using React.js, seamlessly blending creativity and professionalism. Enhanced user interactions with Framer Motion animations and maintained clean, modular styles using Sass with a modern and visually appealing showcase of skills and projects.',
+    img: '/portfolio.png',
+    link: 'https://portfolio-joydas19.vercel.app',
   },
   {
     id: 3,
     color: 'from-violet-300 to-purple-300',
-    title: 'University Website',
+    title: 'University',
     desc: 'A responsive university website using HTML, CSS, and JavaScript, ensuring an optimal user experience across devices. Implemented intuitive navigation, and a clean, accessible design for engaging digital platform for students.',
-    img: 'https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    link: 'https://github.com/JoyDas1902/university',
+    img: '/university.png',
+    link: 'https://university-joydas19.vercel.app',
   },
 ];
 
@@ -73,18 +73,18 @@ const PortfolioPage = () => {
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-8 text-white">
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
+                <div className="flex flex-col gap-4 text-white">
+                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
+                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px]">
                     <Image src={item.img} alt="" fill />
                   </div>
-                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg">
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
+                    <button className="p-2 text-sm md:p-4 md:text-md lg:text-lg bg-white text-gray-600 font-semibold mb-4 rounded">Visit</button>
                   </Link>
                 </div>
               </div>
@@ -93,7 +93,7 @@ const PortfolioPage = () => {
         </div>
       </div>
       <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
-        <h1 className="text-8xl">Contact Me</h1>
+        <h1 className="text-8xl mt-8">Contact Me</h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: -360 }}

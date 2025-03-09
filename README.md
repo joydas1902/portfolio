@@ -1,4 +1,4 @@
-# Portfolio App
+# Portfolio
 
 A portfolio web app using Next.js, seamlessly blending creativity and professionalism. Enhanced user interactions with Framer Motion animations and maintained clean, modular styles using Tailwind CSS. Elevating my online presence with a modern and visually appealing showcase of skills and projects.
 
