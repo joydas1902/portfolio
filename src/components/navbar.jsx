@@ -75,6 +75,17 @@ const Navbar = () => {
           <NavLink link={link} key={link.title} />
         ))}
       </div>
+      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
+        <Link
+          href="/"
+          className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
+        >
+          <span className="text-white mx-2">Joy</span>
+          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
+            Das
+          </span>
+        </Link>
+      </div>
       <div className="hidden md:flex gap-4 w-1/3">
         <Link href="https://www.linkedin.com/in/joydas1902">
           <Image src="/linkedin.png" alt="" width={24} height={24} />
